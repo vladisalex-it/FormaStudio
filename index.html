@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FORMA STUDIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,6 +16,9 @@
         <div class="container">
             <div class="header__inner">
                 <nav class="menu">
+                    <button class="menu__btn">
+                        <span></span>
+                    </button>
                     <ul class="menu-list">
                         <li class="menu-item">
                             <a href="#" class="menu-link">ABOUT STUDIO</a>
@@ -31,13 +37,38 @@
                 <a href="#" class="logo">
                     <img src="./images/logo.svg" alt="">
                 </a>
-                <a href="tel:+79606882167" class="header__phone">+7(960) 688 21 67<a>
+                <a href="tel:+79606882167" class="header__phone"><img src="./images/phone.svg" alt=""><span>+7(960) 688 21 67</span></a>
             </div>
             <h1 class="header__title">Architecture that shapes space</h1>
             <p class="header__text">We create innovative and aesthetically refined spaces where comfort and functionality merge with contemporary design.</p>
             <a href="#" class="header__btn">Submit a request</a>
         </div>
     </header>
+    <main>
+    <section class="services section-box">
+        <div class="container">
+            <h2 class="services__title section__title">Our Services</h2>
+            <ul class="services__list">
+                <li class="services__item">
+                    <p class="services__item-title">Architectural Design</p>
+                    <p class="services__item-text">We will design your home personally for you, combining ergonomics and beauty, guided by a designer’s vision of space.</p>
+                </li>
+                <li class="services__item">
+                    <p class="services__item-title">Interior Design</p>
+                    <p class="services__item-text">We handle everything from concept development to project completion, so you don’t have to worry about a thing.</p>
+                </li>
+                <li class="services__item">
+                    <p class="services__item-title">Architectural supervision</p>
+                    <p class="services__item-text">We oversee the implementation of our projects from concept to realization</p>
+                </li>
+                <li class="services__item">
+                    <p class="services__item-title">Turnkey Projects</p>
+                    <p class="services__item-text">We handle everything from concept development to project completion, so you don’t have to worry about a thing.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    </main>
     
     <script src="js/script.js"></script>
 </body>
