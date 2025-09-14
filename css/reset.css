@@ -63,13 +63,18 @@ table {
 	border-spacing: 0;
 }
 
-a {
+a {	
+	text-decoration: none;
 	color: inherit;
 }
 
 button {
 	font-family: inherit;
+	background-color: transparent;
+    padding: 0;
+    border: none;
 }
+
 button,
 label {
   cursor: pointer;
