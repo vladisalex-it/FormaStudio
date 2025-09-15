@@ -10,7 +10,6 @@ html {
 
 body {
     font-family: "Roboto", sans-serif;
-    /* font-family: "Montserrat", sans-serif; */
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -227,8 +226,85 @@ button {
     transform: translateX(15px);
 }
 
+/* steps */
+.steps {
+    padding: 60px 0 100px;
+    display: flex;
+    background-color: #171717;
+    color: #F5F5F5;
+}
+.steps__title {
+    margin-bottom: 56px;
+}
+
+.steps__list-wrapper {
+    max-width: 562px;
+}
+.steps__title {
+    line-height: 1.16;
+}
+.steps__list {
+    list-style: none;
+    counter-reset: myCounter;
+}
+.steps__item {
+    counter-increment: myCounter;
+    position: relative;
+    padding-left: 57px;
+    padding-bottom: 40px;
+}
+.steps__item::before {
+    content: counter(myCounter);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #F5F5F5 ;
+    position: absolute;
+    left: 0;
+}
+.steps__item::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 48px;
+    bottom: 8px;
+    width: 1px;
+    background-color: #F5F5F5;
+}
+
+.steps__item:last-child {
+    padding-bottom: 0;
+}
+
+.steps__item:last-child::after {
+    display: none;
+}
+
+.steps__item-title {
+    padding-top: 6px;
+    font-size: 24px;
+    line-height: 1.16;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.steps__img img {
+   width: 100%;
+   display: block;
+   height: 100%;
+   object-fit: cover;
+
+}
 
 
+@media (max-width: 1780px) {
+
+    }
 
 @media (max-width: 1300px) {
     .menu__btn {
@@ -254,6 +330,13 @@ button {
     }
     .services__item-title {
         margin-bottom: 5px;
+    }
+    .steps {
+        display: block;
+    }
+    .steps__list-wrapper {
+        padding-bottom: 40px;
+        max-width: 100%;
     }
 }
 
@@ -285,7 +368,7 @@ button {
         margin-bottom: 20px;
     }
     .projects__slider-title {
-        font-size: 26px;
+        font-size: 24px;
     }
     .projects__slider-descr {
         font-size: 16px;
@@ -295,9 +378,11 @@ button {
         margin-bottom: 12px;
     }
     .projects__slider-btn {
-        padding: 14px 100px;
+        padding: 16px 100px;
     }
-      
+    .steps {
+        padding: 50px 0;
+    }
 
 }
 
@@ -320,6 +405,26 @@ button {
         padding: 15px 10px;
         word-wrap: break-word;
     }
+    .steps__item {
+        padding-left: 37px;
+        padding-bottom: 20px;
+    }
+    .steps__item::before {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+    .steps__item::after {
+        left: 10px;
+        top: 28px;
+    }
+    .steps__item-title {
+        padding-top: 0px;
+        font-size: 22px;
+        margin-bottom: 5px;
+        margin-top: -1px;
+    }
+    
 }
 
 
